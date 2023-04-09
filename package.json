@@ -4,6 +4,10 @@
   "description": "easiermtl translate source for comment-translate",
   "version": "0.0.2",
   "publisher": "goooice",
+  "author": {
+    "name": "GoooIce",
+    "url": "https://github.com/GoooIce"
+  },
   "engines": {
     "vscode": "^1.63.0"
   },
@@ -60,7 +64,8 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
+    "test": "node ./out/test/runTest.js",
+    "deploy": "vsce publish --yarn"
   },
   "devDependencies": {
     "@types/glob": "^7.1.4",
