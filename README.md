@@ -15,18 +15,15 @@ Please install '[comment-translate](https://github.com/intellism/vscode-comment-
 ## Use
 
 1. After installation, call the "Change translation source" command of "Comment Translate"
-    ![change](./image/change.png)
+   ![change](./image/change.png)
 2. Check "Baidu translate" to configure the plugin API Key
-image.png
-    ![select](https://imgoss.bfrontend.com/uPic/image-20221122135343430.png)
+   image.png
+   ![select](https://imgoss.bfrontend.com/uPic/image-20221122135343430.png)
 3. Directly use the "Comment Translate" interactive mode to translate the corresponding text
 
 ## Extension Settings
 
 This extension contributes the following settings:
-
-* `baiduTranslate.appId`: baidu app id
-* `baiduTranslate.appKey`: baidu app key
 
 ## Known Issues
 

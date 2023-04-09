@@ -1,9 +1,9 @@
 {
-  "name": "baidu-translate",
-  "displayName": "baidu-translate",
-  "description": "baidu translate source for comment-translate",
+  "name": "easiermtl-translate",
+  "displayName": "easiermtl-translate",
+  "description": "easiermtl translate source for comment-translate",
   "version": "0.0.2",
-  "publisher": "webxmsj",
+  "publisher": "goooice",
   "engines": {
     "vscode": "^1.63.0"
   },
@@ -13,19 +13,19 @@
   "keywords": [
     "translateSource",
     "comment translate",
-    "baidu",
-    "baidu translate",
+    "easiermtl",
+    "easiermtl translate",
     "翻译",
     "注释",
     "翻訳"
   ],
-  "homepage": "https://github.com/webxmsj/baidu-translate#readme",
+  "homepage": "https://github.com/goooice/easiermtl-translate#readme",
   "bugs": {
-    "url": "https://github.com/webxmsj/baidu-translate/issues"
+    "url": "https://github.com/goooice/easiermtl-translate/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/webxmsj/baidu-translate.git"
+    "url": "https://github.com/goooice/easiermtl-translate.git"
   },
   "activationEvents": [],
   "main": "./out/extension.js",
@@ -36,24 +36,21 @@
   "contributes": {
     "configuration": [
       {
-        "title": "Baidu translate Configuration",
+        "title": "easiermtl translate Configuration",
         "type": "Object",
         "properties": {
-          "baiduTranslate.appId": {
+          "easiermtlTranslate.url": {
             "type": "string",
-            "description": "app id"
-          },
-          "baiduTranslate.appKey": {
-            "type": "string",
-            "description": "appKey"
+            "default": "https://easiermtl.com",
+            "description": "easiermtl server url"
           }
         }
       }
     ],
     "translates": [
       {
-        "translate": "baidu",
-        "title": "Baidu translate"
+        "translate": "easiermtl",
+        "title": "easiermtl translate"
       }
     ]
   },
@@ -73,6 +70,7 @@
     "@typescript-eslint/eslint-plugin": "^5.1.0",
     "@typescript-eslint/parser": "^5.1.0",
     "@vscode/test-electron": "^1.6.2",
+    "@vscode/vsce": "^2.18.0",
     "eslint": "^8.1.0",
     "glob": "^7.1.7",
     "mocha": "^9.1.3",
@@ -82,7 +80,6 @@
     "axios": "^1.1.3",
     "comment-translate-manager": "^0.0.2",
     "got": "^12.5.3",
-    "node-fetch": "^3.3.0",
-    "querystring": "^0.2.1"
+    "node-fetch": "2"
   }
 }
